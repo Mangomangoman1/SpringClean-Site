@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SpringClean is a safe, simple duplicate file cleaner for macOS. Inspect what will happen before you apply." />
+  <title>SpringClean — Safe Duplicate Cleaner for macOS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="glow"></div>
+  </div>
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <span class="name">SpringClean</span>
+    </div>
+    <nav class="nav">
+      <a href="#how">How it works</a>
+      <a href="#safety">Safety</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-ghost" href="#download">Download</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="kicker">macOS utility • exact duplicates • safe by default</p>
+      <h1>Clean duplicates without the anxiety.</h1>
+      <p class="sub">
+        SpringClean finds <strong>exact duplicate files</strong>, shows you an <strong>Inspect (dry run)</strong> preview,
+        then moves duplicates to a <strong>Review Folder</strong> by default.
+      </p>
+
+      <div class="cta">
+        <a class="btn btn-primary" href="#download">Download DMG</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+
+      <div class="trust">
+        <div class="chip">Inspect first</div>
+        <div class="chip">Keeps 1 per group</div>
+        <div class="chip">Review folder default</div>
+        <div class="chip">Fast on external drives</div>
+      </div>
+
+      <div class="shot" role="img" aria-label="SpringClean preview screenshot placeholder">
+        <div class="shot-inner">
+          <div class="shot-top">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <div class="shot-title">SpringClean — Inspect (Dry Run)</div>
+          </div>
+          <div class="shot-body">
+            <div class="col">
+              <div class="line w70"></div>
+              <div class="line w55"></div>
+              <div class="line w62"></div>
+              <div class="line w40"></div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="line w60"></div>
+                <div class="line w85"></div>
+                <div class="line w75"></div>
+              </div>
+              <div class="card">
+                <div class="line w50"></div>
+                <div class="line w80"></div>
+                <div class="line w70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="shot-note">Add screenshots when you’re ready (we’ll swap this block for real images).</p>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <article class="step">
+          <h3>1) Scan</h3>
+          <p>Add one or more folders/drives. SpringClean groups files by size, fingerprints, then verifies matches.</p>
+        </article>
+        <article class="step">
+          <h3>2) Inspect (dry run)</h3>
+          <p>See exactly what will be kept vs moved. Conflicts (like name collisions) are resolved safely.</p>
+        </article>
+        <article class="step">
+          <h3>3) Apply</h3>
+          <p>Duplicates go to a Review Folder by default. You stay in control.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="safety" class="section">
+      <h2>Safety by default</h2>
+      <div class="grid2">
+        <div class="panel">
+          <h3>Exact duplicates only</h3>
+          <p>SpringClean removes only byte-for-byte duplicates (no fuzzy guessing).</p>
+        </div>
+        <div class="panel">
+          <h3>Keep rules</h3>
+          <p>Choose how keepers are picked (oldest/newest/largest, etc.). Always keeps at least one per group.</p>
+        </div>
+        <div class="panel">
+          <h3>Name collision handling</h3>
+          <p>If moving duplicates into a single folder causes filename collisions, SpringClean auto-renames safely.</p>
+        </div>
+        <div class="panel">
+          <h3>Works on external drives</h3>
+          <p>Clear messaging for read-only volumes and permissions, so you don’t get stuck mid-cleanup.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section">
+      <h2>Download</h2>
+      <div class="download">
+        <div class="panel">
+          <p class="mono">macOS • DMG installer</p>
+          <p>
+            <strong>Coming soon.</strong> Once the first public build is ready, this button will link to the latest DMG.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#" aria-disabled="true">Download DMG (soon)</a>
+            <a class="btn btn-ghost" href="#faq">Install help</a>
+          </div>
+          <p class="fine">If macOS warns about an app from the internet, right-click → Open. (We’ll notarize when you’re ready.)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <details class="faq" open>
+        <summary>Does SpringClean delete files?</summary>
+        <p>By default it moves duplicates into a Review Folder so you can verify before deleting anything permanently.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it safe?</summary>
+        <p>SpringClean uses an Inspect (dry run) step and only targets exact duplicates. It always keeps at least one file per group.</p>
+      </details>
+      <details class="faq">
+        <summary>Will it find “similar” photos?</summary>
+        <p>v1 focuses on exact duplicates. Similar-photo cleanup may be added later as an optional mode.</p>
+      </details>
+      <details class="faq">
+        <summary>Can it scan external drives?</summary>
+        <p>Yes. If a drive is read-only or disconnected, SpringClean will show a clear message before applying changes.</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <div class="brand small">
+        <div class="mark" aria-hidden="true"></div>
+        <span class="name">SpringClean</span>
+      </div>
+      <p class="fine">© <span id="y"></span> SpringClean. Built for calm, safe cleanup.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
